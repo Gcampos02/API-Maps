@@ -36,14 +36,6 @@ img {
 }
 
 .float-box-info {
-  /* position: fixed;
-  bottom: 0px;
-  left: 20px;
-  padding: 10px 20px;
-  background-color: #1e9cf7;
-  color: #ffffff;
-  z-index: 5;
-  border-radius: 10px 10px 0px 0px; */
   position: absolute;
   left: 20px;
   padding: 10px 10px;
@@ -60,17 +52,6 @@ img {
 .float-box-info.active{
   bottom: 0px;
 }
-
-/* .float-box-info:after{
-  content: " ";
-  position: absolute;
-  right: 30px;
-  top: -15px;
-  border-top: none;
-  border-right: 15px solid transparent;
-  border-left: 15px solid transparent;
-  border-bottom: 15px solid black;
-} */
 
 .aling-title{
   display: flex;
@@ -111,10 +92,6 @@ img {
 }
 
 #box-result p {
-  /* padding: 5px 10px;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 500; */
   padding: 10px 10px;
   color: #000000;
   font-size: 14px;
@@ -153,7 +130,6 @@ img {
 #map {
   height: calc(100% - 80px);
 }
-/* Optional: Makes the sample page fill the window. */
 html,
 body {
   height: 100%;
