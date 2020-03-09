@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Places Search</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <i class="fas fa-globe-americas" onclick="window.location.reload(true);" title="Reload Page"></i>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <button class="btn-navbar" id="yourPosition">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Sua Localização</p>
+    </button>
+  </nav>
+
+  <div id="toggleTitle" class="float-box-info">
+    <div class="aling-title">
+      <p>Resultados da pesquisa: <span id="searchTotalValue">0</span></p>
+      <i id="toggle" class="fas fa-chevron-up"></i>
+    </div>
+    <div id="box-result">
+    </div>
+  </div>
+
+  <div id="map">
+  </div>
+
+  <script src="main.js"></script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0YjDhCjuEKwJlx0tbqRnvVxr02OpfRi4&language=pt-BR&libraries=places&callback=initAutocomplete"
+    async defer></script>
+</body>
+
+</html>

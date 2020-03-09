@@ -1,0 +1,260 @@
+/*Reset CSS*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.float-box-info {
+  /* position: fixed;
+  bottom: 0px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #1e9cf7;
+  color: #ffffff;
+  z-index: 5;
+  border-radius: 10px 10px 0px 0px; */
+  position: absolute;
+  left: 20px;
+  padding: 10px 10px;
+  background-color: #1e9cf7;
+  color: #ffffff;
+  z-index: 5;
+  border-radius: 10px 10px 0px 0px;
+  height: 70vh;
+  width: 500px;
+  bottom: -64vh;
+  transition: .4s;
+}
+
+.float-box-info.active{
+  bottom: 0px;
+}
+
+/* .float-box-info:after{
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid black;
+} */
+
+.aling-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aling-title .fas{
+  margin-right: 5px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.aling-title .fas.active{
+  transform: rotate(-180deg);
+}
+
+.float-box-info p {
+  padding: 5px 10px;
+}
+
+.nav-bar {
+  background-color: #136e63;
+  padding: 20px 0px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+
+#box-result {
+  background-color: #ffffff;
+  margin: 10px 0px;
+  overflow-y: scroll;
+  height: 90%;
+}
+
+#box-result p {
+  /* padding: 5px 10px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500; */
+  padding: 10px 10px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.nav-bar .fa-globe-americas {
+  padding-left: 20px;
+  font-size: 40px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-bar .btn-navbar {
+  background: #1e9cf7;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+.nav-bar .btn-navbar i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: calc(100% - 80px);
+}
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+.pac-logo:after {
+  display: none;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 20px;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  width: 40%;
+}
+
+#pac-input:focus {
+  border-color: #1e9cf7;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+#target {
+  width: 345px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar .btn-navbar p {
+    display: none;
+  }
+  .nav-bar .btn-navbar i {
+    margin-right: 0px;
+  }
+  .nav-bar .btn-navbar {
+    margin-right: 20px;
+  }
+  #pac-input {
+    width: 100%;
+  }
+  .float-box-info{
+    width: 260px;
+    bottom: calc(-100vh - -36%);
+    left: 0px;
+  }
+}
+
